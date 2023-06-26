@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spAffiliateProgram_GetByTitle_SortByPopularity]
-	@Term varchar(500)
+	@Term nvarchar(500)
 AS
 BEGIN
 	SELECT ap.Id,ap.Title,ap.[Description]

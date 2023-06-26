@@ -29,6 +29,12 @@ namespace DataAccess.ObjectAccess
         {
             await _sqlAccess.LoadDataAsync("spUser_SubscribeToAffiliateProgram", new { UserId = userId, AffiliateProgramId = affiliateProgramId });
         }
+        public async Task<IEnumerable<AffiliateProgram>> GetSubscribedAffiliateProgramsAsync(int userId)
+        {
+            
+            var result = await _sqlAccess.QueryDataAsync<AffiliateProgram, dynamic>("spUser_GetSubsсribedAffiliatePrograms", new { Id = userId});
+            return result;
+        }
 
     }
 }

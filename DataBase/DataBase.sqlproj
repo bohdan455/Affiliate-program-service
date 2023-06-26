@@ -68,6 +68,7 @@
     <Build Include="StoredProcedures\spAffiliateProgram_GetAll.sql" />
     <Build Include="StoredProcedures\spUser_SubscribeToAffiliateProgram.sql" />
     <Build Include="StoredProcedures\spAffiliateProgram_GetByTitle_SortByPopularity.sql" />
+    <Build Include="StoredProcedures\spUser_GetSubscribedAffiliatePrograms.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DataBase.refactorlog" />
